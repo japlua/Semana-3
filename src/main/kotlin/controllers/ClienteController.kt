@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*
 
 
 @RestController
-@RequestMapping("/workouts")
+@RequestMapping("/cliente")
 @CrossOrigin(methods = [RequestMethod.GET, RequestMethod.POST, RequestMethod.PATCH, RequestMethod.PUT])
 
 class ClienteController {
