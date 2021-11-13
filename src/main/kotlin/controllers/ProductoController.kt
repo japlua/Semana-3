@@ -1,6 +1,6 @@
 package com.JonnathanPlua.primerapi.controllers
-import com.JonnathanPlua.primerapi.model.Pedido
-import com.JonnathanPlua.primerapi.service.PedidoService
+import com.JonnathanPlua.primerapi.model.Producto
+import com.JonnathanPlua.primerapi.service.ProductoService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.*
 
@@ -8,17 +8,17 @@ import org.springframework.web.bind.annotation.*
 @RequestMapping("/diets")
 @CrossOrigin(methods = [RequestMethod.GET, RequestMethod.POST, RequestMethod.PATCH, RequestMethod.PUT])
 
-class PedidoController {
+class ProductoController {
 
     @Autowired
-    lateinit var pedidoService: PedidoService
+    lateinit var productoService: ProductoService
 
     @GetMapping
-    fun list(): List<Pedido> {
-        return pedidoService.list()
+    fun list(): List<Producto> {
+        return productoService.list()
     }
 @PostMapping
-fun save(@RequestBody pedido: Pedido): Pedido {
-    return pedidoService.save(pedido)
+fun save(@RequestBody producto: Producto): Producto {
+    return productoService.save(producto)
 }
 }

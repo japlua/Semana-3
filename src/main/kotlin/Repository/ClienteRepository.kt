@@ -1,9 +1,9 @@
 package com.JonnathanPlua.primerapi.repository
 
-import com.JonnathanPlua.primerapi.model.Pedido
+import com.JonnathanPlua.primerapi.model.Cliente
 import org.springframework.data.jpa.repository.JpaRepository
 
-interface PedidoRepository : JpaRepository<Pedido,Long>{
+interface ClienteRepository : JpaRepository<Cliente,Long>{
     
     
     

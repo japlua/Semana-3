@@ -3,9 +3,9 @@ package com.JonnathanPlua.primerapi.model
 import javax.persistence.*
 
 @Entity
-@Table (name = "encargo")
+@Table (name = "cliente")
 
-class Encargo {
+class Cliente {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id

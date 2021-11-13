@@ -1,4 +1,4 @@
-package com.JonnathanPlua.primerapi
+package com.JonnathanPlua.primerapi.model
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

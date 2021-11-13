@@ -1,6 +1,6 @@
 package com.JonnathanPlua.primerapi.controllers
-import com.JonnathanPlua.primerapi.model.Encargo
-import com.JonnathanPlua.primerapi.service.EncargoService
+import com.JonnathanPlua.primerapi.model.Cliente
+import com.JonnathanPlua.primerapi.service.ClienteService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.*
 
@@ -9,14 +9,14 @@ import org.springframework.web.bind.annotation.*
 @RequestMapping("/workouts")
 @CrossOrigin(methods = [RequestMethod.GET, RequestMethod.POST, RequestMethod.PATCH, RequestMethod.PUT])
 
-class EncargoController {
+class ClienteController {
 
     @Autowired
-    lateinit var encargoService: EncargoService
+    lateinit var clienteService: ClienteService
 
     @GetMapping
-    fun list(): List<Encargo>{
-        return encargoService.list()
+    fun list(): List<Cliente>{
+        return clienteService.list()
     }
 
 }
